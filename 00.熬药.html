@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2022-07-31 Sun 10:50 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>中药熬制须知</title>
+<meta name="author" content="iohex" />
+<meta name="generator" content="Org Mode" />
+<style>
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+</style>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">中药熬制须知</h1>
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#orga805b97">1. 锅</a></li>
+<li><a href="#org495a0a4">2. 熬药用水</a></li>
+<li><a href="#org8cdfe06">3. 煎药火候以及方法</a></li>
+<li><a href="#org6723dff">4. 特殊药物煎法</a>
+<ul>
+<li><a href="#org506ab4a">4.1. 先煎</a></li>
+<li><a href="#orga92359a">4.2. 后下</a></li>
+<li><a href="#orgb5a8705">4.3. 包煎</a></li>
+<li><a href="#org3b3c7a2">4.4. 另炖或另煎</a></li>
+<li><a href="#orgae50985">4.5. 溶化(烊化)</a></li>
+<li><a href="#org43f9be9">4.6. 冲服</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orga805b97" class="outline-2">
+<h2 id="orga805b97"><span class="section-number-2">1.</span> 锅</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+中医熬药靠什么：靠个锅
+</p>
+
+<p>
+选择锅需要选择理化性质稳定的锅，以砂锅瓦罐为最好，不锈钢次之，不锈钢勉强可以用。
+不要用铝铁铜锅。
+并且需要带个盖。
+</p>
+</div>
+</div>
+
+<div id="outline-container-org495a0a4" class="outline-2">
+<h2 id="org495a0a4"><span class="section-number-2">2.</span> 熬药用水</h2>
+<div class="outline-text-2" id="text-2">
+<ul class="org-ul">
+<li>煎药前需要用凉水或者温水浸泡药物30到60分钟。</li>
+<li>用水量以高出药面为度,大约是药材的两到三倍体积。</li>
+<li>凉水跑的时间略长于温水，不要用开水。</li>
+<li>泡完药物后切记不要把水倒掉。</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org8cdfe06" class="outline-2">
+<h2 id="org8cdfe06"><span class="section-number-2">3.</span> 煎药火候以及方法</h2>
+<div class="outline-text-2" id="text-3">
+<p>
+一下为通常做法，根据药性不同可能会有差别。
+</p>
+<ul class="org-ul">
+<li>煎药时先用大火(武火),将药煮开,再转成小火(文火)继续熬药。</li>
+<li>煎药时间是先从药物沸腾之时开始计时。解表药、泻下药大火煮开后煮10-15分钟
+补养药水开后煎煮30-60分钟</li>
+<li>一般中药需要煎煮两次，第一遍煮完滤渣，滤渣，将药汁倒入碗中(为一煎)。再加水煮第二遍。
+加水量为第一遍的一半，煮完后滤渣，为第二遍的药汁(二煎)。分2到3此复用。</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org6723dff" class="outline-2">
+<h2 id="org6723dff"><span class="section-number-2">4.</span> 特殊药物煎法</h2>
+<div class="outline-text-2" id="text-4">
+</div>
+<div id="outline-container-org506ab4a" class="outline-3">
+<h3 id="org506ab4a"><span class="section-number-3">4.1.</span> 先煎</h3>
+<div class="outline-text-3" id="text-4-1">
+<ul class="org-ul">
+<li>贝壳与矿物质等质地坚硬的药物应打碎后需要先煎。</li>
+<li>某些有毒峻烈的药物需要先煎，如附子、乌头，也应先煎一到两小时以缓解其药性。</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orga92359a" class="outline-3">
+<h3 id="orga92359a"><span class="section-number-3">4.2.</span> 后下</h3>
+<div class="outline-text-3" id="text-4-2">
+<ul class="org-ul">
+<li>气味方向的药物，益在药物将药煎好后后下。通常煎煮五分钟作用，可以防止有效成分的散失, 如薄荷、砂仁、豆蔻等。</li>
+<li>用大黄取其泻下功能的时候，一般后下十到十五分钟。</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgb5a8705" class="outline-3">
+<h3 id="orgb5a8705"><span class="section-number-3">4.3.</span> 包煎</h3>
+<div class="outline-text-3" id="text-4-3">
+<p>
+某些要会是药液浑浊，使得延后有刺激或者易于粘锅的药物，如赤石脂、滑石、车前子、蒲黄等。
+应该现用纱布包好。再和其他药物一起煎煮。
+</p>
+</div>
+</div>
+
+<div id="outline-container-org3b3c7a2" class="outline-3">
+<h3 id="org3b3c7a2"><span class="section-number-3">4.4.</span> 另炖或另煎</h3>
+<div class="outline-text-3" id="text-4-4">
+<p>
+某些贵重的药物，为了保证期有效成分，避免同煎时被其他药物吸收,可另炖或另煎。
+如人参，可切成薄片，放入加盖碗内。隔水炖1到2小时。
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgae50985" class="outline-3">
+<h3 id="orgae50985"><span class="section-number-3">4.5.</span> 溶化(烊化)</h3>
+<div class="outline-text-3" id="text-4-5">
+<p>
+胶质、粘性大的药物如阿胶鹿角胶蜂蜜饴糖等，用时应单独加温融化。再加入去渣的药中趁热混合。
+</p>
+</div>
+</div>
+
+<div id="outline-container-org43f9be9" class="outline-3">
+<h3 id="org43f9be9"><span class="section-number-3">4.6.</span> 冲服</h3>
+<div class="outline-text-3" id="text-4-6">
+<p>
+某些芳香或者贵重的药物,不宜加热煎煮，应研磨为细末，用药液或者温开水冲服。
+</p>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="date">Date: 2022-07-31</p>
+<p class="author">Author: iohex</p>
+<p class="date">Created: 2022-07-31 Sun 10:50</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>
